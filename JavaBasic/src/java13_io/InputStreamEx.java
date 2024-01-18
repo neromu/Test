@@ -6,6 +6,7 @@ import java.util.Arrays;
 //Git 확인용
 //Github 확인용
 //master 추가
+//master 추가2
 public class InputStreamEx {
 
 	public static void main(String[] args) {
