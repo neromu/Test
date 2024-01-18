@@ -13,7 +13,7 @@ public class IOStreamEx2 {
 		
 		byte[] buf = new byte[1024];	//입출력 데이터의 임시 저장소
 		int len = -1;	//입력 데이터의 길이
-		
+		 
 		try(InputStream is = System.in ;
 			OutputStream os = System.out ) {
 //			입력 데이터가 EOF가 될 때까지 반복적으로 입력한다

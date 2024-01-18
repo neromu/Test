@@ -12,7 +12,7 @@ public class InputStreamEx {
 		InputStream is = System.in;
 		
 //		System.out.print("Input : ");
-		
+		 
 //		try {
 ////			**키보드 입력 완료는 enter 키를 누른다
 ////			**enter 키는 '\r' '\n'으로 전달된다
