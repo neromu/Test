@@ -2,6 +2,16 @@ package etc;
 
 import java.util.Scanner;
 
+public int gcd(int a, int b) {
+	if(b == 0) return a;
+	else return gcd(b, a%b);
+}
+
+public int fibo(int a) {
+	if(a == 0 || a == 1) return 1;
+	else return fibo(a - 1) * fibo(a - 2);
+}
+
 public class ForQuiz_04 {
 
 	public static void main(String[] args) {
