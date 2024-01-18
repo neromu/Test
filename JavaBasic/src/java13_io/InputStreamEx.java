@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 //Git 확인용
+//Github 확인용
 public class InputStreamEx {
 
 	public static void main(String[] args) {
