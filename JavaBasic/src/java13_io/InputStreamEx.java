@@ -5,12 +5,16 @@ import java.io.InputStream;
 import java.util.Arrays;
 //Git 확인용
 //Github 확인용
+<<<<<<< HEAD
+//branch 추가
+=======
 
 //branch 추가
 
 //master 추가
 //master 추가2
 
+>>>>>>> branch 'master' of https://github.com/neromu/Test
 public class InputStreamEx {
 
 	public static void main(String[] args) {
