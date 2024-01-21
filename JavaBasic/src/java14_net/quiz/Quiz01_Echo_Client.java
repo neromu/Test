@@ -26,26 +26,17 @@ public class Quiz01_Echo_Client {
 		PrintWriter out = null;
 		Scanner in = null;
 		String msg = null;
-		
 		InetAddress ip = null;
 		
 		try {
 			sock = new Socket(serverIP, PORT);
 			
-			out = new PrintWriter(
-					new BufferedOutputStream(
-					sock.getOutputStream()), true);
-			
+			out = new PrintWriter(new BufferedOutputStream(sock.getOutputStream()), true);
 			
 			System.out.print("Input : ");
 			out.println(new Scanner(System.in).nextLine() );
 			
-			
-			in = new Scanner(
-					new BufferedReader(
-							new InputStreamReader(
-									sock.getInputStream())));
-			
+			in = new Scanner(new BufferedReader(new InputStreamReader(sock.getInputStream())));
 			
 			msg = in.nextLine();
 			
@@ -53,10 +44,8 @@ public class Quiz01_Echo_Client {
 			System.out.println("Server>> " +msg);
 			
 			while ("EXIT" != msg) {
-				
 				System.out.print("Input (\"EXIT\" = 종료) : ");
 				out.println(new Scanner(System.in).nextLine() );
-				
 				msg = in.nextLine();
 				
 				System.out.println();
@@ -66,36 +55,18 @@ public class Quiz01_Echo_Client {
 					out.println("EXIT");
 					break;
 				}
-				
-					
 			}
-			
-			
-			
-			
 			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {
-			
 			try {
 				if(sock!=null)	sock.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 			
-			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}//main
 }
