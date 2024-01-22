@@ -43,8 +43,8 @@ public class Quiz02_FileServer {
 			InetAddress ip = sock.getInetAddress();
 			in = new BufferedInputStream( sock.getInputStream() );
 			
-			System.out.println("\t>>클라이언트 IP : " + ip.getHostAddress()); //IP
-			System.out.println("\t>>클라이언트 Port : " + sock.getPort() ); //Port
+			System.out.println(">>클라이언트 IP : " + ip.getHostAddress()); //IP
+			System.out.println(">>클라이언트 Port : " + sock.getPort() ); //Port
 			
 			while (( len = in.read(buf)) != -1) {
 				fos.write(buf,0,len);
@@ -69,6 +69,7 @@ public class Quiz02_FileServer {
 			}
 			
 		}
+		System.out.println();
 		System.out.println(">>복사 완료.");
 		System.out.println("total : "+total+"byte");
 	}
