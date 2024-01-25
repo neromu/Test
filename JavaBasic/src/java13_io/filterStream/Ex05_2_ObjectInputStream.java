@@ -34,7 +34,7 @@ public class Ex05_2_ObjectInputStream {
 			System.out.println(p1.getX()+", "+p1.getY());
 			System.out.println(p2.getX()+", "+p2.getY());
 			System.out.println(p3.getX()+", "+p3.getY());
-
+			
 			
 			
 			
